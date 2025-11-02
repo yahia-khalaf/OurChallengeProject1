@@ -1,0 +1,7 @@
+def lettercount(word,letter):
+	if len(word) == 0:
+		return 0
+	else:
+		return int(word[0] == letter) + lettercount(word[1:], letter)
+
+print(lettercount("hello","l")
